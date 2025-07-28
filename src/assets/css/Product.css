@@ -1,0 +1,64 @@
+body {
+    background-color: #1c1b2a;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* زيادة العرض قليلًا */
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .product-card {
+    background: #2d2b3f;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    width: 320px; /* عرض ثابت للكارد */
+    margin: auto;
+  }
+  
+  
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.7);
+  }
+  
+  .product-card img {
+    width: 100%;           /* الصورة تملأ عرض الكارد */
+    height: 150px;         /* ارتفاع مستطيل مناسب */
+    object-fit: contain;   /* الصورة كاملة بدون قص */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1c1b2a; /* خلفية متناسقة */
+  }
+  
+  
+  .product-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    color: #ccc;
+  }
+  
+  .product-card a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: #bb86fc;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
